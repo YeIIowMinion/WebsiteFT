@@ -1,0 +1,8 @@
+{
+    "mangas" : 
+    [ 
+        {"id" : "two", "photo" : "./logoImg/png-clipart-credit-card-debit-card-mastercard-payment-card-credit-card-payment-internet.png", "title" : "MasterCard", "description" : "avaiable for website"}, 
+        {"id" : "three", "photo" : "./logoImg/visa-payment-card1873.jpg", "title" : "Visa", "description" : "avaiable for website"},
+        {"id" : "one", "photo" : "./logoImg/png-clipart-credit-card-debit-card-plastic-product-credit-card-internet-debit-card.png", "title": "Junior", "description" : "Fro Juniors"}
+    ]
+}

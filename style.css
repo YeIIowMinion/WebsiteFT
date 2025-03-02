@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #895B2E;
+}
+
+.blackDisplay{
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #704b26;
+}
+.header__menu{
+    display: none;
+}
+.header__logo {
+    padding: 20px;
+}
+.header__pag {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+.header__pag-text{
+
+}
+.hpBtn{
+    font-family: "Rubik", serif;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.hpBtn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 7px;
+    background-color: rgb(44, 44, 44);
+    transition: 0.7s;
+}
+.hpBtn:hover::after{
+    width: 100%;
+    background-color: white;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.background__leftSide {
+    width: 100%;
+    overflow-y: scroll;
+    height: 600px;
+    background-color: #714b26;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+}
+.leftSide-text {
+    font-family: "Rubik", serif;
+    text-align: center;
+    color: rgb(237, 211, 13);
+    font-size: 35px;
+}
+.leftSide__goods {
+}
+.leftSide__goodsItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    margin: 30px 0;
+}
+.item__logo {
+    width: 165px;
+}
+.item__name {
+    font-family: "Rubik", serif;
+    color: rgb(49, 196, 16);
+    font-size: 30px;
+}
+.item__price {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(68, 42, 11);
+    color: rgb(237, 211, 13);
+    font-family: "Rubik", serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.item__price:hover{
+    background-color: rgb(164, 97, 21);
+    color: rgb(38, 19, 6);
+}
+
+.background__rightSide {
+    background-color: #895B2E;
+    width: 100%;
+    font-family: "Rubik", serif;
+    user-select: none; 
+}
+.donateInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.rightSide__text {
+    color: rgb(237, 211, 13);
+}
+.rightSide__btn {
+    text-align: center;
+}
+.rightSide__btn-buttonThirty {
+    background-color: transparent;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    font-family: "Rubik", serif;
+    transition: 1s;
+    color: rgb(237, 211, 13);
+}
+
+.rightSide__btn-buttonThirty::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonThirty::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonThirty:hover::before{
+    height: 100%;
+}
+.rightSide__btn-buttonThirty:hover::after{
+    height: 100%;
+}
+.rightSide__btn-buttonThirty:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.rightSide__btn-buttonNinty {
+    background-color: transparent;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    font-family: "Rubik", serif;
+    transition: 1s;
+    color: rgb(237, 211, 13);
+}
+
+.rightSide__btn-buttonNinty::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonNinty::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonNinty:hover::before{
+    height: 100%;
+}
+.rightSide__btn-buttonNinty:hover::after{
+    height: 100%;
+}
+.rightSide__btn-buttonNinty:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+.rightSide__btn-buttonFE {
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Rubik", serif;
+    padding: 10px;
+    transition: 1.5s;
+    color: rgb(237, 211, 13);
+}
+.rightSide__btn-buttonFE::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonFE::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.rightSide__btn-buttonFE:hover::before{
+    height: 100%;
+}
+.rightSide__btn-buttonFE:hover::after{
+    height: 100%;
+}
+.rightSide__btn-buttonFE:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+.rightSide__opportunity {
+    padding: 15px;
+}
+.rightSide__opportunity-text {
+    margin: 10px 0;
+    font-family: "Rubik", serif;
+    color: rgb(49, 196, 16);
+}
+.rightSide__opportunity-description {
+    margin: 30px 0px;
+    color: rgb(47, 237, 13);
+}
+.rightSide__opportunity-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rS-price {
+    font-family: "Rubik", serif;
+    color: rgb(237, 211, 13);
+}
+.btn__price{
+    background-color: transparent;
+    color: rgb(237, 211, 13);
+    position: relative;
+    padding: 10px 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+.btn__price::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.btn__price::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    background-color: #ffffff;
+    width: 5px;
+    transition: 0.5s;
+}
+.btn__price:hover::before{
+    height: 100%;
+}
+.btn__price:hover::after{
+    height: 100%;
+}
+.btn__price:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.usersTitle{
+    text-align: center;
+    color: white;
+    font-family: "Rubik", serif;
+    user-select: none;
+}
+.boxUser{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    background-color: #704b26;
+    color: white;
+    font-family: "Rubik", serif;
+    padding: 20px 10px;
+}
+
+.footer__privacy{
+    color: white;
+    font-family: "Rubik", serif;
+    text-align: center;
+    user-select: none;
+}
+
+.forNews{
+    color: white;
+    font-family: "Rubik", serif;
+    text-align: center;
+    font-size: 70px;
+}
+.backgroung__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: "Rubik", serif;
+    object-fit: cover;
+}
+.prevBtn{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(68, 42, 11);
+    color: rgb(237, 211, 13);
+    font-family: "Rubik", serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nextBtn{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(68, 42, 11);
+    color: rgb(237, 211, 13);
+    font-family: "Rubik", serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.currentPage{
+    color: white;
+    padding: 5px;
+    font-family: "Rubik", serif;
+}
+
+@media (max-width : 1456px) {
+    .leftSide__goodsItem{
+        width: 600px;
+    }
+}
+@media (max-width : 1269px) {
+    .leftSide__goodsItem{
+        width: 550px;
+    }
+}
+@media (max-width : 1111px) {
+    .leftSide__goodsItem{
+        width: 470px;
+    }
+}
+@media (max-width : 976px) {
+    .background{
+        flex-direction: column;
+    }
+    .leftSide__goodsItem{
+        width: 95%;
+        text-align: center;
+    }
+}
+@media (max-width : 670px) {
+    .header__logo{
+       padding: 10px; 
+    }
+    .header__pag{
+        display: none;
+    }
+    .header__menu{
+        display: block;
+        font-size: 50px;
+        color: white;
+        transition: 1s;
+        cursor: pointer;
+        padding: 0 40px;
+    }
+    .header__menu:hover{
+        transform: rotate(180deg);
+    }
+    .header{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .blackDisplay{
+        transition: 1s;
+    }
+    .blackDisplay.show{
+        z-index: 1;
+        opacity: 100%;
+    }
+    .blackDisplay.hide{
+        z-index: -1;
+        opacity: 0;
+    }
+    .header__menu-black{
+        z-index: 2;
+        color: white;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        font-size: 40px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .header__menu-black:hover{
+        transform: rotate(180deg);
+    }
+}
+@media (max-width : 489px) {
+    .item__logo{
+        display: none;
+    }
+    .leftSide__goodsItem{
+        justify-content: space-around;
+    }
+    .item__name{
+        border: 1px solid #ff0000;
+        width: 100%;
+    }
+    .item__price{
+        border: 1px solid #ff0000;
+        width: 100%;
+    }
+}
